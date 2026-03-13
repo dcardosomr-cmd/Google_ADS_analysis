@@ -8,7 +8,7 @@
 
 ## The Business Problem
 
-A two-property boutique hotel group in Lisbon had been running Google Ads campaigns for three years with no clear picture of whether the investment was working. The questions being asked by management were straightforward:
+A two-property boutique hotel group had been running Google Ads campaigns for three years with no clear picture of whether the investment was working. The questions being asked by management were straightforward:
 
 - Are we making money from these campaigns?
 - Are we improving over time?
@@ -24,9 +24,9 @@ This analysis covers €39,566 in total ad spend across 2023–2025, cross-refer
 
 ![Campaign Performance Dashboard](Dashboards/campaign-overview.png)
 
-**No — but the gap is closing.**
+**Overall no, but the gap is closing.**
 
-Across the full three-year period the account spent €39,566 and generated €20,935 in attributed revenue. Every year total spend has exceeded total revenue. The account has never been profitable in aggregate.
+Across the full three-year period the account spent €39,566 and generated €20,935 in revenue. Every year total spend has exceeded total revenue. The account has never been profitable in aggregate.
 
 | Year | ROAS | Assessment |
 |---|---|---|
@@ -40,13 +40,13 @@ The trajectory is real. 2025 is the first year the account approached positive R
 
 ## Are we improving over time?
 
-**Yes — but the reason matters.**
+**Yes, but the reason matters.**
 
 2024 had the highest campaign count and the highest click volume of any year in the dataset. It also had the worst ROAS. More campaigns and more clicks produced no improvement in revenue. The account was spreading budget across campaign types that do not convert.
 
 2025 reversed this by reducing the number of active campaigns and concentrating budget into what actually works. Revenue improved while spend remained similar. This is the correct direction.
 
-> **The lesson:** campaign count and click volume are vanity metrics in this account. Revenue per euro spent is the only metric that matters.
+> Nº of Clicks and Conversions are important but Revenue per euro spent is the most important metric.
 
 ---
 
@@ -61,7 +61,7 @@ The answer is structural. The budget has consistently been allocated across four
 | Demand Gen | €7,534 | €21 | 0.003 |
 | Display | €1,235 | €0 | 0.00 |
 
-**Demand Gen alone consumed €7,534 and returned €21.** It generated nearly 1.9 million impressions — meaning Google showed Inspira ads almost two million times to people who had no purchase intent and ignored them. Impressions are not bookings.
+**Demand Gen alone consumed €7,534 and returned €21.** It generated nearly 1.9 million impressions, meaning Google showed the company ads almost two million times to people who had no purchase intent and ignored them. 
 
 Search is the only campaign type that generates consistent revenue. Every other type is loss-making. The account ROAS is low because profitable Search campaigns are being averaged down by three non-performing campaign types consuming over 30% of the total budget.
 
@@ -69,9 +69,11 @@ Search is the only campaign type that generates consistent revenue. Every other 
 
 ## What campaigns should we focus on?
 
+Overall we should focous on search campaings as it is the type of campaing that is the most profitable, althouhg we should not disregard the performance max but we should adapt the budget
+
 ### Does number of campaigns increase revenue?
 
-**No.** The data shows the opposite. The year with the most campaigns produced the worst returns. Reducing campaigns in 2025 improved ROAS. More campaigns means more budget dilution, not more revenue.
+**No.** it exactly the opposite. The year with the most campaigns produced the worst returns. Reducing campaigns in 2025 improved ROAS. More campaigns means more budget dilution, not more revenue.
 
 ### What campaign type performs better?
 
@@ -90,9 +92,26 @@ Search generates all meaningful revenue. Every other campaign type shows spend w
 
 ---
 
+![Market and Seasonality Dashboard](Dashboards/market-seasonality.png)
+
 ## What budget adjustments should be made?
 
-![Market and Seasonality Dashboard](Dashboards/market-seasonality.png)
+Cut immediately — no justification exists to continue:
+
+Brazil — ROAS 0.01 across every single quarter across all three years. Zero improvement trend. This is not a market that needs optimization, it needs elimination.
+Demand Gen — €7,534 spent, €21 returned. Every euro here is a direct loss.
+All broad match keywords — CPA of €554 vs €53 for exact match. 10x more expensive per conversion.
+
+Reduce significantly:
+
+UK/Ireland in Q2 and Q3 — ROAS drops after Q1 every year without exception. The budget should follow the demand pattern.
+All markets in April and May — every market collapses simultaneously in these two months every year. This is Lisbon demand behavior, not fixable with better ads. Running full budget in April–May is burning money on a structural low-demand period.
+
+Increase:
+
+Spain — currently receiving €592 with ROAS 2.54. This is the most efficient market in the account by a large margin and it is being starved of budget.Increase the budget allocation, targeting Q1 and Q3 specifically.
+France/Belgium in Q4 — the only market that peaks in autumn. Currently under-targeted in the one period where it consistently performs.
+
 
 ### What is the market with the best potential?
 
@@ -105,7 +124,7 @@ Spain — by a significant margin.
 | Portugal | €1,513 | Q1: 1.07 · Q3: 1.63 | 0.65 |
 | UK / Ireland | €6,292 | Q1: 1.31 | 0.60 |
 | USA / Canada | €2,800 | Q1: 1.08 | 0.39 |
-| Brazil | €2,400+ | Every quarter: ~0.01 | 0.24 |
+| Brazil | €2,400+ | Every quarter: 0.01 | 0.24 |
 
 Spain delivers ROAS 2.54 on €592 in spend. UK/Ireland delivers ROAS 0.60 on €6,292 — the largest budget allocation in the account going to one of the worst-performing markets. Spain is also only targeted in one period of the year despite performing strongly in both Q1 and Q3. Brazil has delivered near-zero ROAS across every quarter across all three years with no improvement trend.
 
@@ -116,11 +135,11 @@ Spain delivers ROAS 2.54 on €592 in spend. UK/Ireland delivers ROAS 0.60 on �
 Two universal peaks appear across all markets every year:
 
 - **February** — the strongest booking month of the year without exception
-- **June–July** — summer travel demand
-- **April–May collapse** — all markets drop simultaneously. This is a Lisbon demand pattern, not a campaign management failure. Budgets should be reduced 50%+ in these months.
+- **June–July** — summer travel demand, eventhough the city itself slows down people are still booking to come in August, September and October
+- **April–May collapse** — all markets drop simultaneously. This is a Lisbon demand pattern, not a campaign management failure. Budgets should be reduced 50%+ in these monthsas people that book to come in April-May they book before which does not happen in May to come in June as Lisbon during summer slows down
 
 Market-specific patterns:
-- **Spain:** Q1 and Q3 — concentrate budget January–February and July–August
+- **Spain:** Q1 and Q3 — concentrate budget January–February and July–August - where the market is  strongest most likely due to school vacation period
 - **France/Belgium:** Only market that peaks in Q4 — concentrate budget October–December
 - **UK/Ireland and USA/Canada:** Strong in Q1, weak in Q2–Q3 — reduce significantly after March
 
@@ -136,17 +155,19 @@ The spend vs revenue chart answers this directly:
 
 **Budget reallocation priority:**
 1. Eliminate Brazil entirely — redirect budget to Spain
-2. Reduce UK/Ireland 40% in Q2–Q3 — redirect to Q1
-3. Triple Spain budget, targeting Q1 and Q3
+2. Reduce UK/Ireland in Q2–Q3 — redirect to Q1
+3. Increase Spain budget, targeting Q1 and Q3
 4. Increase France/Belgium in Q4 only
-5. Cut all markets 50% in April–May
+5. Cut all markets investment in April–May
 6. Reinvest saved budget into February and July campaigns
 
 ---
 
+![Keywords Dashboard](Dashboards/keywords.png)
+
 ## Keywords — Where is the money actually coming from?
 
-![Keywords Dashboard](Dashboards/keywords.png)
+The majority of the revenue would likely exist with or without Google Ads. The organic, direct, and referral channels are generating nearly 5x more revenue than all paid channels combined. What Google Ads Search is doing is capturing branded intent that already exists, not creating new demand, which means that the google ads strategy needs to change and improve, not stop.
 
 ### What keywords work best?
 
@@ -175,7 +196,7 @@ Match type performance makes the priority clear:
 | Broad match | 0.61 | 0.06% | €554 |
 | Phrase match | Marginal | Low | High |
 
-Broad match delivers 10x higher CPA than exact match. Expanding to broad match is not the path to fixing non-branded performance — it accelerates waste. All broad match keywords should be converted to exact match immediately.
+Broad match delivers 10x higher CPA than exact match. Expanding to broad match is not the path to fixing non-branded performance — it accelerates waste. All broad match keywords should be converted to exact match.
 
 ---
 
@@ -194,13 +215,15 @@ Broad match delivers 10x higher CPA than exact match. Expanding to broad match i
 | Paid Search | €6,379 | — | €2,222 |
 | Cross-network | €5,337 | — | €9,145 |
 
-The two highest-revenue channels cost nothing in ad spend. Organic Search and Direct traffic outperform every paid channel. The channels where the least money is being spent are generating the most revenue. This tells a clear story: Inspira's best customers already know the brand, search for it directly, and book without needing to be reached through paid advertising.
+The two highest-revenue channels cost nothing in ad spend. Organic Search and Direct traffic outperform every paid channel. The channels where the least money is being spent are generating the most revenue. This tells a clear story: This Company's best customers already know the brand, search for it directly, and book without needing to be reached through paid advertising.
 
 ### What is the client journey per channel?
 
 The dominant booking behavior across all channels is Single Touch — one session, one visit, one booking. Customers arrive with purchase intent already formed and convert immediately. Multi-touch paths requiring multiple ad exposures before converting are a minority.
 
 This directly undermines the logic behind Demand Gen and Brand Awareness campaigns. Those campaign types are designed to build awareness over multiple touchpoints. But the data shows this audience does not need awareness building — they already know the hotel when they arrive.
+
+Which means that the Brand Awareness campaigns are not working properly and need to be ajusted
 
 ### Are Brand Awareness campaigns working?
 
@@ -212,9 +235,9 @@ The sessions chart shows no correlation between months with high Brand Awareness
 
 ### What channel is the most profitable?
 
-Organic Search and Direct deliver infinite ROAS — zero ad cost. Among paid channels, Paid Search (Google Ads Search) delivers ROAS 2.87 in GA4 — significantly higher than what Google Ads reports internally because GA4's multi-touch attribution captures assisted conversions that Google Ads last-click attribution misses.
+Organic Search and Direct deliver infinite ROAS — zero ad cost. Among paid channels, Paid Search (Google Ads Search) delivers ROAS 2.87 in GA4.
 
-Cross-network is the least profitable paid channel: €9,145 spent for €5,337 in revenue even with full multi-touch credit. It should be paused.
+Cross-network is the least profitable paid channel: €9,145 spent for €5,337 in revenue even with full multi-touch credit. It should be ajusted.
 
 **Tracking gap:** The Unassigned channel represents €41,597 in revenue with no identified source — the second-largest revenue category in GA4. This is a tracking gap that must be resolved before any full attribution conclusion can be drawn.
 
@@ -224,26 +247,24 @@ Cross-network is the least profitable paid channel: €9,145 spent for €5,337 
 
 | # | Finding | Action |
 |---|---|---|
-| 1 | Demand Gen spent €7,534 and returned €21 | Eliminate immediately |
+| 1 | Demand Gen spent €7,534 and returned €21 | Eliminate |
 | 2 | Brazil ROAS 0.01 across every quarter | Eliminate all Brazil campaigns |
-| 3 | Spain ROAS 2.54 on only €592 spend | Triple the budget |
-| 4 | UK/Ireland ROAS 0.60 on €6,292 — largest spend in account | Reduce 40% in Q2–Q3 |
-| 5 | April–May universal demand collapse every year | Cut all budgets 50% in these months |
+| 3 | Spain ROAS 2.54 on only €592 spend | Increase the budget |
+| 4 | UK/Ireland ROAS 0.60 on €6,292 — largest spend in account | Reduce in Q2–Q3 |
+| 5 | April–May universal demand collapse every year | Cut all budgets in these months |
 | 6 | Broad match CPA is 10x exact match CPA | Convert all broad match to exact |
 | 7 | Top 3 keywords drive 64% of revenue | Build keyword diversification plan |
 | 8 | Organic Search outperforms all paid channels at zero cost | Invest in SEO alongside paid |
 | 9 | €41,597 revenue with no attribution source | Fix GA4 tracking implementation |
-| 10 | Search Console not linked to GA4 | Link immediately for brand query data |
 
 ---
 
 ## Data Limitations
 
-- **GA4 conversion tracking was non-functional in 2023** — all 2023 attribution data excluded from GA4 analysis
-- **Brand Awareness effectiveness cannot be fully evaluated** without Google Search Console branded query volume data
+- **GA4 conversion tracking was non-functional until 2023** — all 2023 attribution data excluded before 2023 from GA4 analysis
+- **Brand Awareness effectiveness cannot be fully evaluated** without Google Search Console branded query volume data but overall the performance based on this data set shows it is not very good 
 - **GA4 revenue covers both properties combined** — property-level attribution not possible with this dataset
 - **Unassigned GA4 channel (€41,597)** indicates tracking gaps that may be misattributing revenue from multiple sources
-- **Google Ads and GA4 use different attribution models** — ROAS figures between the two systems are not directly comparable
 
 ---
 

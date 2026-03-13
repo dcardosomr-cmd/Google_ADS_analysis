@@ -1,4 +1,3 @@
-# Google_ADS_analysis
 # Google Ads Performance Analysis — Inspira Hotels (2023–2025)
 
 **Tools:** SQL · Power BI · DAX · Google Analytics 4  
@@ -7,49 +6,53 @@
 
 ---
 
-## Overview
+## The Business Problem
 
-This project analyzes three years of Google Ads campaign data for a two-property boutique hotel group in Lisbon, cross-referenced with GA4 attribution data. The goal was to identify where budget was being wasted, which markets and campaigns were actually profitable, and what the data revealed about customer acquisition behavior.
+A two-property boutique hotel group in Lisbon had been running Google Ads campaigns for three years with no clear picture of whether the investment was working. The questions being asked by management were straightforward:
 
-The analysis covers €39,566 in total ad spend across 2023–2025 and produces a set of concrete, evidence-based recommendations for budget reallocation.
+- Are we making money from these campaigns?
+- Are we improving over time?
+- Why is our ROAS so low?
+- Which campaigns should we focus on?
+- Where should we adjust the budget?
 
-**The core finding:** Search campaigns work. Every other campaign type — Demand Gen, Performance Max, Display, Brand Awareness — generated near-zero returns while consuming over 30% of the total budget.
-
----
-
-## Dashboard
-
-The Power BI report is structured across five pages. Each section below corresponds to one dashboard page.
+This analysis covers €39,566 in total ad spend across 2023–2025, cross-referenced with GA4 attribution data, and answers each of these questions with evidence.
 
 ---
 
-### 1. Overview
-
-![Overview Dashboard](Dashboards/overview.png)
-
-**Key metrics at a glance:**
-
-| Metric | Value |
-|---|---|
-| Total Spend | €39,566 |
-| Total Revenue | €20,935 |
-| Overall ROAS | 0.53 |
-| Total Conversions | 506 |
-| CPA | €78.19 |
-| CTR | 4.04% |
-| Conversion Rate | 0.46% |
-
-The account has been loss-making across the entire three-year period. However the trajectory is improving: 2025 ROAS reached 0.79, up from 0.35 in 2023, driven by campaign reduction and budget concentration into Search.
-
-**Critical observation:** 2024 had the highest click volume of any year but the worst ROAS. More clicks did not produce more revenue. The account needed to optimize for conversions, not traffic.
-
----
-
-### 2. Campaign Performance
+## Are the investments in campaigns paying off?
 
 ![Campaign Performance Dashboard](Dashboards/campaign-overview.png)
 
-Campaign type breakdown exposes the structural budget misallocation at the core of the account:
+**No — but the gap is closing.**
+
+Across the full three-year period the account spent €39,566 and generated €20,935 in attributed revenue. Every year total spend has exceeded total revenue. The account has never been profitable in aggregate.
+
+| Year | ROAS | Assessment |
+|---|---|---|
+| 2023 | 0.35 | Severely loss-making |
+| 2024 | 0.34 | No improvement despite more campaigns |
+| 2025 | 0.79 | Significant recovery — approaching breakeven |
+
+The trajectory is real. 2025 is the first year the account approached positive ROAS, and it did so not by spending more but by spending differently — fewer campaigns, better allocation, concentration into Search.
+
+---
+
+## Are we improving over time?
+
+**Yes — but the reason matters.**
+
+2024 had the highest campaign count and the highest click volume of any year in the dataset. It also had the worst ROAS. More campaigns and more clicks produced no improvement in revenue. The account was spreading budget across campaign types that do not convert.
+
+2025 reversed this by reducing the number of active campaigns and concentrating budget into what actually works. Revenue improved while spend remained similar. This is the correct direction.
+
+> **The lesson:** campaign count and click volume are vanity metrics in this account. Revenue per euro spent is the only metric that matters.
+
+---
+
+## Why is our ROAS so negative?
+
+The answer is structural. The budget has consistently been allocated across four campaign types with radically different performance:
 
 | Campaign Type | Total Spend | Total Revenue | ROAS |
 |---|---|---|---|
@@ -58,80 +61,129 @@ Campaign type breakdown exposes the structural budget misallocation at the core 
 | Demand Gen | €7,534 | €21 | 0.003 |
 | Display | €1,235 | €0 | 0.00 |
 
-Demand Gen alone consumed €7,534 while producing €21 in revenue. Despite generating nearly 1.9 million impressions, it produced almost no clicks and virtually no conversions. The issue is not ad frequency — it is that these ads reached people with no purchase intent, and those people ignored them.
+**Demand Gen alone consumed €7,534 and returned €21.** It generated nearly 1.9 million impressions — meaning Google showed Inspira ads almost two million times to people who had no purchase intent and ignored them. Impressions are not bookings.
 
-Search is the only campaign type that generates consistent revenue. All other campaign types are loss-making and represent budget that should be reallocated.
-
-**Only 4 campaigns achieved positive ROAS across the entire three-year period — all in 2025.** This confirms that campaign optimization, not budget increases, drives performance improvement.
+Search is the only campaign type that generates consistent revenue. Every other type is loss-making. The account ROAS is low because profitable Search campaigns are being averaged down by three non-performing campaign types consuming over 30% of the total budget.
 
 ---
 
-### 3. Market & Seasonality
+## What campaigns should we focus on?
+
+### Does number of campaigns increase revenue?
+
+**No.** The data shows the opposite. The year with the most campaigns produced the worst returns. Reducing campaigns in 2025 improved ROAS. More campaigns means more budget dilution, not more revenue.
+
+### What campaign type performs better?
+
+Search campaigns are the only type generating meaningful conversions:
+
+- **Demand Gen:** Dominates impressions, near-zero clicks, near-zero conversions
+- **Performance Max:** Moderate impressions and clicks, minimal conversions
+- **Search:** Lowest impression volume, highest conversion rate by far
+- **Display:** No measurable conversions — discontinued
+
+The impression volume of Demand Gen is misleading. High impressions with near-zero clicks means the ads are being shown to people with no interest in booking. This is budget waste, not brand building.
+
+### What campaign type generates more revenue?
+
+Search generates all meaningful revenue. Every other campaign type shows spend with near-zero revenue return. **The four campaigns that achieved positive ROAS across the entire three-year period were all Search campaigns, all in 2025.** Campaign optimization — not budget increases — drives performance.
+
+---
+
+## What budget adjustments should be made?
 
 ![Market and Seasonality Dashboard](Dashboards/market-seasonality.png)
 
-Market performance reveals one critical misallocation: Spain delivers the highest ROAS in the account but receives among the smallest budget.
+### What is the market with the best potential?
 
-| Market | Total Spend | ROAS | Assessment |
+Spain — by a significant margin.
+
+| Market | Total Spend | ROAS | Total ROAS |
 |---|---|---|---|
-| Spain | €592 | 4.53 | Critically underinvested |
-| France / Belgium | €2,787 | 1.44 | Profitable |
-| USA / Canada | €2,800 | 1.35 | Profitable |
-| Portugal | €1,513 | 1.15 | Profitable |
-| UK / Ireland | €6,292 | 0.92 | Loss-making — highest spend |
-| Brazil | €2,400+ | 0.01 | Total waste |
+| Spain | €592 | Q1: 5.32 · Q3: 3.40 | 2.54 |
+| France / Belgium | €2,787 | Q4: 1.56 | 0.56 |
+| Portugal | €1,513 | Q1: 1.07 · Q3: 1.63 | 0.65 |
+| UK / Ireland | €6,292 | Q1: 1.31 | 0.60 |
+| USA / Canada | €2,800 | Q1: 1.08 | 0.39 |
+| Brazil | €2,400+ | Every quarter: ~0.01 | 0.24 |
 
-UK/Ireland receives the largest budget allocation in the account and is the only major market delivering negative ROAS. Spain receives a fraction of that budget and returns 4.53x. This is the most actionable finding in the market analysis.
+Spain delivers ROAS 2.54 on €592 in spend. UK/Ireland delivers ROAS 0.60 on €6,292 — the largest budget allocation in the account going to one of the worst-performing markets. Spain is also only targeted in one period of the year despite performing strongly in both Q1 and Q3. Brazil has delivered near-zero ROAS across every quarter across all three years with no improvement trend.
 
-**Seasonality patterns:**
+### Is there any seasonality?
 
-The heatmap reveals consistent, repeatable seasonal behavior across all markets:
+**Yes — clear and consistent.**
 
-- **Q1 is the universal peak** — strongest ROAS across all markets, particularly February
-- **April–May collapse is structural** — all markets drop simultaneously regardless of campaign activity. This is a Lisbon demand pattern, not a campaign management failure
-- **Spain peaks in Q1 and Q3** — should be targeted in January–February and July–August
-- **France/Belgium peaks in Q4** — the only market that performs better in autumn than in spring
-- **UK/Ireland and USA/Canada weaken sharply in Q2–Q3** — budgets should be reduced significantly in these quarters
+Two universal peaks appear across all markets every year:
+
+- **February** — the strongest booking month of the year without exception
+- **June–July** — summer travel demand
+- **April–May collapse** — all markets drop simultaneously. This is a Lisbon demand pattern, not a campaign management failure. Budgets should be reduced 50%+ in these months.
+
+Market-specific patterns:
+- **Spain:** Q1 and Q3 — concentrate budget January–February and July–August
+- **France/Belgium:** Only market that peaks in Q4 — concentrate budget October–December
+- **UK/Ireland and USA/Canada:** Strong in Q1, weak in Q2–Q3 — reduce significantly after March
+
+### Is the investment paying off per market?
+
+The spend vs revenue chart answers this directly:
+
+- **UK/Ireland:** Highest spend in the account, revenue below spend — loss-making
+- **USA/Canada:** High spend, revenue slightly below spend — marginal loss
+- **France/Belgium:** Spend and revenue roughly balanced — marginally profitable
+- **Spain:** Small spend, revenue clearly above spend — the only market returning consistent profit
+- **Brazil:** Spend with near-zero revenue — total waste
+
+**Budget reallocation priority:**
+1. Eliminate Brazil entirely — redirect budget to Spain
+2. Reduce UK/Ireland 40% in Q2–Q3 — redirect to Q1
+3. Triple Spain budget, targeting Q1 and Q3
+4. Increase France/Belgium in Q4 only
+5. Cut all markets 50% in April–May
+6. Reinvest saved budget into February and July campaigns
 
 ---
 
-### 4. Keywords
+## Keywords — Where is the money actually coming from?
 
 ![Keywords Dashboard](Dashboards/keywords.png)
 
-The keyword data reveals a fundamental dependency on branded search:
+### What keywords work best?
+
+The account has an extreme dependency on branded search — keywords where users are already searching for Inspira Hotels by name:
 
 | Keyword Type | Keywords | Revenue | ROAS | Revenue Share |
 |---|---|---|---|---|
 | Branded | 30 | €44,005 | 2.94 | 94.87% |
 | Non-Branded | 221 | €2,520 | 0.20 | 5.13% |
 
-The account is almost entirely capturing people who already know the brand. 221 non-branded keywords across significant spend produce 5.13% of total revenue. Google Ads is functioning as a branded search defense mechanism, not a customer acquisition tool.
+30 branded keywords generate 94.87% of revenue. 221 non-branded keywords generate 5.13%. Google Ads is functioning as a branded search defense tool — capturing people who already intend to book — not as a customer acquisition tool.
 
-**Keyword concentration risk:**
+The concentration risk is significant: the top single keyword drives 45.93% of total revenue. The top 3 drive over 64%. One competitor bid on brand terms could collapse the majority of account revenue overnight.
 
-- Top keyword alone: 43.58% of all keyword revenue
-- Top 3 keywords combined: over 64% of all revenue
-- Top 10 keywords: over 80% of all revenue
+### What keywords generate the most clicks?
 
-This concentration means the account is vulnerable to a single algorithmic change, a competitor bidding on brand terms, or a budget reduction.
+Non-branded keywords generate 56.33% of clicks but only 5.13% of revenue. The problem is not that non-branded search cannot work — it is that the current keyword selection does not match purchase intent. Generic terms like "+hotel +lisbon" attract low-intent browsers. The opportunity is in specific attribute terms: *boutique hotel lisbon spa*, *design hotel lisbon breakfast*, *lisbon hotel rooftop* — users with specific preferences who are actively comparing and ready to book.
 
-**Match type performance:**
+### What keyword type generates more revenue?
+
+Match type performance makes the priority clear:
 
 | Match Type | ROAS | Conv. Rate | CPA |
 |---|---|---|---|
-| Exact | 1.73 | 1.54% | €53 |
-| Broad | 0.61 | 0.06% | €554 |
+| Exact match | 1.73 | 1.54% | €53 |
+| Broad match | 0.61 | 0.06% | €554 |
+| Phrase match | Marginal | Low | High |
 
-Broad match delivers 10x higher CPA than exact match. Expanding to broad match is not the solution to the non-branded keyword problem — it accelerates waste. The opportunity is in identifying high-intent non-branded exact match terms that describe specific hotel attributes: spa, design hotel, boutique, rooftop, breakfast included.
+Broad match delivers 10x higher CPA than exact match. Expanding to broad match is not the path to fixing non-branded performance — it accelerates waste. All broad match keywords should be converted to exact match immediately.
 
 ---
 
-### 5. GA4 Attribution
+## GA4 Attribution — What is actually driving revenue?
 
 ![GA4 Attribution Dashboard](Dashboards/ga4-attribution.png)
 
-GA4 attribution data places Google Ads performance in the context of the full acquisition picture:
+### What channel performs the best?
 
 | Channel | Revenue | Conversions | Ad Cost |
 |---|---|---|---|
@@ -142,71 +194,73 @@ GA4 attribution data places Google Ads performance in the context of the full ac
 | Paid Search | €6,379 | — | €2,222 |
 | Cross-network | €5,337 | — | €9,145 |
 
-The two highest-revenue channels cost nothing in ad spend. Organic Search and Direct traffic — driven by brand awareness and SEO — outperform every paid channel by a significant margin.
+The two highest-revenue channels cost nothing in ad spend. Organic Search and Direct traffic outperform every paid channel. The channels where the least money is being spent are generating the most revenue. This tells a clear story: Inspira's best customers already know the brand, search for it directly, and book without needing to be reached through paid advertising.
 
-**Paid Search ROAS in GA4 is 2.87**, considerably higher than what Google Ads reports internally. GA4 uses multi-touch attribution which credits Paid Search for assisted conversions that Google Ads last-click attribution misses. The true contribution of Search campaigns is likely higher than the platform dashboard shows.
+### What is the client journey per channel?
 
-**Customer journey analysis:**
+The dominant booking behavior across all channels is Single Touch — one session, one visit, one booking. Customers arrive with purchase intent already formed and convert immediately. Multi-touch paths requiring multiple ad exposures before converting are a minority.
 
-The conversion path data shows that Inspira customers book with unusually high directness:
+This directly undermines the logic behind Demand Gen and Brand Awareness campaigns. Those campaign types are designed to build awareness over multiple touchpoints. But the data shows this audience does not need awareness building — they already know the hotel when they arrive.
 
-- 326 conversions via Single-touch Direct — the dominant path
-- 212 conversions via Single-touch Organic Search
-- 72 conversions via Single-touch Paid Search
-- Multi-touch paths represent a minority of conversions
+### Are Brand Awareness campaigns working?
 
-The majority of customers arrive with clear purchase intent and book in a single session. This behavior is consistent with a branded-search-dominant audience — people who already know the hotel and are actively looking to book. Awareness campaigns requiring multiple touchpoints before conversion are poorly suited to this audience.
+**No measurable impact is visible in the data.**
 
-**Brand Awareness campaign evaluation:**
+The sessions chart shows no correlation between months with high Brand Awareness spend and growth in engaged sessions or revenue. Months with zero Brand Awareness spend perform comparably or better. Cross-network campaigns do not appear in any of the top 20 conversion paths in GA4.
 
-Monthly GA4 data shows no measurable correlation between Brand Awareness spend and engaged session volume or revenue. Months with zero Brand Awareness spend performed comparably or better than months with active spend. Cross-network campaigns — which include Demand Gen and Display — do not appear in any of the top 20 conversion paths.
+> **Important caveat:** A definitive conclusion requires Google Search Console branded query data, which was not available for this analysis. The absence of a visible correlation is not proof of zero effect — it is evidence that no effect is measurable with the current data. Before eliminating Brand Awareness entirely, Search Console should be linked to GA4 and branded query volume trends reviewed.
 
-> **Caveat:** A definitive evaluation of Brand Awareness effectiveness requires Google Search Console branded query data, which was not available for this analysis. The absence of a visible correlation is not proof of zero effect — it is evidence that no effect is measurable with the current data.
+### What channel is the most profitable?
 
-**Tracking gap — Unassigned revenue:**
+Organic Search and Direct deliver infinite ROAS — zero ad cost. Among paid channels, Paid Search (Google Ads Search) delivers ROAS 2.87 in GA4 — significantly higher than what Google Ads reports internally because GA4's multi-touch attribution captures assisted conversions that Google Ads last-click attribution misses.
 
-The Unassigned channel represents €41,597 in revenue with no identified source. This is the second-largest revenue category in GA4 and indicates a tracking implementation gap. Any attribution conclusions drawn from this dataset must be qualified by this limitation.
+Cross-network is the least profitable paid channel: €9,145 spent for €5,337 in revenue even with full multi-touch credit. It should be paused.
+
+**Tracking gap:** The Unassigned channel represents €41,597 in revenue with no identified source — the second-largest revenue category in GA4. This is a tracking gap that must be resolved before any full attribution conclusion can be drawn.
 
 ---
 
-## Key Findings
+## Key Findings Summary
 
-1. **The account has never been profitable in aggregate.** Total spend of €39,566 against total revenue of €20,935 represents a cumulative loss across three years. The improvement trend in 2025 is real but the account has not reached breakeven.
-
-2. **Over 30% of budget was allocated to campaigns producing near-zero revenue.** Demand Gen, Display, and Brand Awareness campaigns consumed significant budget while contributing almost nothing to conversion. Eliminating these campaigns and reallocating to Search is the single highest-impact action available.
-
-3. **Spain is the most efficient market in the account and is critically underinvested.** ROAS 4.53 on €592 spend against UK/Ireland ROAS 0.92 on €6,292 spend represents the most significant budget misallocation in the account.
-
-4. **The April–May performance collapse is seasonal demand, not campaign failure.** All markets drop simultaneously in the same weeks every year. Reducing budgets in this period and reallocating to Q1 and summer peaks would improve overall ROAS without any campaign changes.
-
-5. **The non-branded keyword strategy is underperforming but the solution is not broad match expansion.** 221 non-branded keywords generate 5.13% of revenue. Broad match delivers 10x higher CPA than exact match. The problem is keyword selection, not match type — better non-branded exact match terms targeting specific hotel attributes represent the growth opportunity.
-
-6. **Organic search and direct channels outperform every paid channel without ad spend.** The customers generating the most revenue already know the brand. This reinforces the importance of SEO and direct booking investment alongside paid acquisition.
+| # | Finding | Action |
+|---|---|---|
+| 1 | Demand Gen spent €7,534 and returned €21 | Eliminate immediately |
+| 2 | Brazil ROAS 0.01 across every quarter | Eliminate all Brazil campaigns |
+| 3 | Spain ROAS 2.54 on only €592 spend | Triple the budget |
+| 4 | UK/Ireland ROAS 0.60 on €6,292 — largest spend in account | Reduce 40% in Q2–Q3 |
+| 5 | April–May universal demand collapse every year | Cut all budgets 50% in these months |
+| 6 | Broad match CPA is 10x exact match CPA | Convert all broad match to exact |
+| 7 | Top 3 keywords drive 64% of revenue | Build keyword diversification plan |
+| 8 | Organic Search outperforms all paid channels at zero cost | Invest in SEO alongside paid |
+| 9 | €41,597 revenue with no attribution source | Fix GA4 tracking implementation |
+| 10 | Search Console not linked to GA4 | Link immediately for brand query data |
 
 ---
 
 ## Data Limitations
 
-- **GA4 conversion tracking was non-functional in 2023.** All 2023 attribution data shows zero conversions and has been excluded from GA4 analysis.
-- **Brand Awareness effectiveness cannot be fully evaluated** without Google Search Console branded query volume data.
-- **GA4 revenue covers both properties combined.** Property-level revenue attribution is not possible with this dataset.
-- **The Unassigned GA4 channel (€41,597 revenue)** indicates tracking gaps that may be misattributing revenue from multiple sources.
-- **Google Ads and GA4 use different attribution models.** ROAS figures from the two systems are not directly comparable.
+- **GA4 conversion tracking was non-functional in 2023** — all 2023 attribution data excluded from GA4 analysis
+- **Brand Awareness effectiveness cannot be fully evaluated** without Google Search Console branded query volume data
+- **GA4 revenue covers both properties combined** — property-level attribution not possible with this dataset
+- **Unassigned GA4 channel (€41,597)** indicates tracking gaps that may be misattributing revenue from multiple sources
+- **Google Ads and GA4 use different attribution models** — ROAS figures between the two systems are not directly comparable
 
 ---
 
-## SQL Queries
+## SQL Structure
 
 The full SQL analysis is organized across five sections matching the dashboard structure:
 
 - **Section 1 — Overall Performance:** Year-over-year trends, campaign type breakdown, quarterly performance, 2025 monthly trend
-- **Section 2 — Campaign Performance:** Top campaigns by revenue, budget waste identification, conversion funnel, April/May collapse diagnosis, Q3 analysis
-- **Section 3 — Market & Seasonality:** ROAS by market, quarterly heatmap construction, seasonal peak identification
-- **Section 4 — Keywords:** Branded vs non-branded split, concentration risk, match type performance, zero-conversion keyword audit, branded search volume trend
-- **Section 5 — GA4 Attribution:** Channel revenue and ROAS, multi-touch attribution paths, conversion complexity, traffic quality, non-Google campaign performance
+- **Section 2 — Campaign Performance:** Top campaigns by revenue, budget waste identification, conversion funnel, April/May collapse diagnosis
+- **Section 3 — Market & Seasonality:** ROAS by market, quarterly heatmap, seasonal peak identification
+- **Section 4 — Keywords:** Branded vs non-branded split, concentration risk, match type performance, zero-conversion keyword audit
+- **Section 5 — GA4 Attribution:** Channel revenue and ROAS, multi-touch attribution paths, conversion complexity, non-Google campaign performance
 
 Full SQL file: [`inspira_google_ads_analysis.sql`](inspira_google_ads_analysis.sql)
+
 
 ## About This Project
 
 This analysis was conducted using anonymized data from a real hotel group. Brand names, property names, and identifying campaign details have been replaced with generic identifiers. All performance figures accurately reflect real campaign results.
+

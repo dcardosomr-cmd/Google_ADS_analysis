@@ -25,7 +25,7 @@ The Power BI report is structured across five pages. Each section below correspo
 
 ### 1. Overview
 
-![Overview Dashboard](images/overview.png)
+![Overview Dashboard](Dashboards/Overview.png)
 
 **Key metrics at a glance:**
 
@@ -47,7 +47,7 @@ The account has been loss-making across the entire three-year period. However th
 
 ### 2. Campaign Performance
 
-![Campaign Performance Dashboard](images/Campaign performance.png)
+![Campaign Performance Dashboard](Dashboards/Campaign Overview.png)
 
 Campaign type breakdown exposes the structural budget misallocation at the core of the account:
 
@@ -68,7 +68,7 @@ Search is the only campaign type that generates consistent revenue. All other ca
 
 ### 3. Market & Seasonality
 
-![Market and Seasonality Dashboard](images/Market & sesonality.png)
+![Market and Seasonality Dashboard](Dashboards/Market & Seasonality.png)
 
 Market performance reveals one critical misallocation: Spain delivers the highest ROAS in the account but receives among the smallest budget.
 
@@ -97,7 +97,7 @@ The heatmap reveals consistent, repeatable seasonal behavior across all markets:
 
 ### 4. Keywords
 
-![Keywords Dashboard](images/keywords.png)
+![Keywords Dashboard](Dashboards/Keywords.png)
 
 The keyword data reveals a fundamental dependency on branded search:
 
@@ -129,7 +129,7 @@ Broad match delivers 10x higher CPA than exact match. Expanding to broad match i
 
 ### 5. GA4 Attribution
 
-![GA4 Attribution Dashboard](images/ga4.png)
+![GA4 Attribution Dashboard](Dashboards/Google Analytics Attribution.png)
 
 GA4 attribution data places Google Ads performance in the context of the full acquisition picture:
 
@@ -207,28 +207,6 @@ The full SQL analysis is organized across five sections matching the dashboard s
 
 Full SQL file: [`inspira_google_ads_analysis.sql`](inspira_google_ads_analysis.sql)
 
----
-
-## Repository Structure
-
-```
-├── README.md
-├── inspira_google_ads_analysis.sql
-└── images/
-    ├── overview.png
-    ├── Campaign performance.png
-    ├── Market & sesonality.png
-    ├── keywords.png
-    └── ga4.png
-```
-
----
-
 ## About This Project
 
-This analysis was conducted using anonymized data from a real hotel group, with employer approval. Brand names, property names, and identifying campaign details have been replaced with generic identifiers. All performance figures accurately reflect real campaign results.
-
-The project is part of a broader data analytics portfolio targeting a transition from marketing analytics into a dedicated data analyst role.
-
-**Full portfolio:** [datascienceportfol.io/dcardosomr](https://datascienceportfol.io/dcardosomr)  
-**LinkedIn:** [linkedin.com/in/duartemrc](https://linkedin.com/in/duartemrc)
+This analysis was conducted using anonymized data from a real hotel group. Brand names, property names, and identifying campaign details have been replaced with generic identifiers. All performance figures accurately reflect real campaign results.

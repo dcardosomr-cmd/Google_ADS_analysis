@@ -25,7 +25,7 @@ The Power BI report is structured across five pages. Each section below correspo
 
 ### 1. Overview
 
-![Overview Dashboard](Dashboards/Overview.png)
+![Overview Dashboard](Dashboards/overview.png)
 
 **Key metrics at a glance:**
 
@@ -47,7 +47,7 @@ The account has been loss-making across the entire three-year period. However th
 
 ### 2. Campaign Performance
 
-![Campaign Performance Dashboard](Dashboards/Campaign Overview.png)
+![Campaign Performance Dashboard](Dashboards/campaign-overview.png)
 
 Campaign type breakdown exposes the structural budget misallocation at the core of the account:
 
@@ -68,7 +68,7 @@ Search is the only campaign type that generates consistent revenue. All other ca
 
 ### 3. Market & Seasonality
 
-![Market and Seasonality Dashboard](Dashboards/Market & Seasonality.png)
+![Market and Seasonality Dashboard](Dashboards/market-seasonality.png)
 
 Market performance reveals one critical misallocation: Spain delivers the highest ROAS in the account but receives among the smallest budget.
 
@@ -97,7 +97,7 @@ The heatmap reveals consistent, repeatable seasonal behavior across all markets:
 
 ### 4. Keywords
 
-![Keywords Dashboard](Dashboards/Keywords.png)
+![Keywords Dashboard](Dashboards/keywords.png)
 
 The keyword data reveals a fundamental dependency on branded search:
 
@@ -129,7 +129,7 @@ Broad match delivers 10x higher CPA than exact match. Expanding to broad match i
 
 ### 5. GA4 Attribution
 
-![GA4 Attribution Dashboard](Dashboards/Google Analytics Attribution.png)
+![GA4 Attribution Dashboard](Dashboards/ga4-attribution.png)
 
 GA4 attribution data places Google Ads performance in the context of the full acquisition picture:
 

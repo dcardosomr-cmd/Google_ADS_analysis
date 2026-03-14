@@ -96,9 +96,9 @@ Search generates all meaningful revenue. Every other campaign type shows spend w
 
 ## What budget adjustments should be made?
 
-Cut immediately — no justification exists to continue:
+Cut immediately — There is no reason to continue:
 
-Brazil — ROAS 0.01 across every single quarter across all three years. Zero improvement trend. This is not a market that needs optimization, it needs elimination.
+Brazil — ROAS 0.01 across every single quarter across all three years. Zero improvement trend. This is not a market that needs optimization, it needs to be stoped.
 Demand Gen — €7,534 spent, €21 returned. Every euro here is a direct loss.
 All broad match keywords — CPA of €554 vs €53 for exact match. 10x more expensive per conversion.
 

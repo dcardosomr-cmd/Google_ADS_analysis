@@ -110,7 +110,7 @@ All markets in April and May — every market collapses simultaneously in these 
 Increase:
 
 Spain — currently receiving €592 with ROAS 2.54. This is the most efficient market in the account by a large margin and it is being starved of budget.Increase the budget allocation, targeting Q1 and Q3 specifically.
-France/Belgium in Q4 — the only market that peaks in autumn. Currently under-targeted in the one period where it consistently performs.
+France/Belgium in Q4, the only market that peaks in autumn. Currently under-targeted in the one period where it consistently performs.
 
 
 ### What is the market with the best potential?
@@ -126,11 +126,11 @@ Spain — by a significant margin.
 | USA / Canada | €2,800 | Q1: 1.08 | 0.39 |
 | Brazil | €2,400+ | Every quarter: 0.01 | 0.24 |
 
-Spain delivers ROAS 2.54 on €592 in spend. UK/Ireland delivers ROAS 0.60 on €6,292 — the largest budget allocation in the account going to one of the worst-performing markets. Spain is also only targeted in one period of the year despite performing strongly in both Q1 and Q3. Brazil has delivered near-zero ROAS across every quarter across all three years with no improvement trend.
+Spain delivers ROAS 2.54 on €592 in spend. UK/Ireland delivers ROAS 0.60 on €6,292, the largest budget allocation in the account going to one of the worst-performing markets. Spain is also only targeted in one period of the year despite performing strongly in both Q1 and Q3. Brazil has delivered near-zero ROAS across every quarter across all three years with no improvement trend.
 
 ### Is there any seasonality?
 
-**Yes — clear and consistent.**
+**Yes, clear and consistent.**
 
 Two universal peaks appear across all markets every year:
 
@@ -144,8 +144,6 @@ Market-specific patterns:
 - **UK/Ireland and USA/Canada:** Strong in Q1, weak in Q2–Q3 — reduce significantly after March
 
 ### Is the investment paying off per market?
-
-The spend vs revenue chart answers this directly:
 
 - **UK/Ireland:** Highest spend in the account, revenue below spend — loss-making
 - **USA/Canada:** High spend, revenue slightly below spend — marginal loss
@@ -174,7 +172,6 @@ The majority of the revenue would likely exist with or without Google Ads. The o
 The account has an extreme dependency on branded search — keywords where users are already searching for Inspira Hotels by name:
 
 | Keyword Type | Keywords | Revenue | ROAS | Revenue Share |
-|---|---|---|---|---|
 | Branded | 30 | €44,005 | 2.94 | 94.87% |
 | Non-Branded | 221 | €2,520 | 0.20 | 5.13% |
 

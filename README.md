@@ -32,7 +32,7 @@ Across the full three-year period the account spent €39,566 and generated €2
 |---|---|---|
 | 2023 | 0.35 | Severely loss-making |
 | 2024 | 0.34 | No improvement despite more campaigns |
-| 2025 | 0.79 | Significant recovery — approaching breakeven |
+| 2025 | 0.79 | Significant recovery, approaching breakeven |
 
 The trajectory is real. 2025 is the first year the account approached positive ROAS, and it did so not by spending more but by spending differently — fewer campaigns, better allocation, concentration into Search.
 

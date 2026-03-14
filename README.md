@@ -206,11 +206,11 @@ Broad match delivers 10x higher CPA than exact match. Expanding to broad match i
 | Channel | Revenue | Conversions | Ad Cost |
 |---|---|---|---|
 | Organic Search | €42,720 | 70 | €0 |
-| Unassigned | €41,597 | 88 | — |
+| Unassigned | €41,597 | 88 | - |
 | Direct | €32,128 | 47 | €0 |
 | Referral | €22,526 | 46 | €0 |
-| Paid Search | €6,379 | — | €2,222 |
-| Cross-network | €5,337 | — | €9,145 |
+| Paid Search | €6,379 | 0 | €2,222 |
+| Cross-network | €5,337 | 0 | €9,145 |
 
 The two highest-revenue channels cost nothing in ad spend. Organic Search and Direct traffic outperform every paid channel. The channels where the least money is being spent are generating the most revenue. This tells a clear story: This Company's best customers already know the brand, search for it directly, and book without needing to be reached through paid advertising.
 

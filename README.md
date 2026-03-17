@@ -8,7 +8,7 @@
 
 ## The Business Problem
 
-A two-property boutique hotel group had been running Google Ads campaigns for three years with no clear picture of whether the investment was working. The questions being asked by management were straightforward:
+A two property hotel group had been running Google Ads campaigns for three years with no clear picture of whether the investment was working. The questions being asked by management were straightforward:
 
 - Are we making money from these campaigns?
 - Are we improving over time?

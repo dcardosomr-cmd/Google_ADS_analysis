@@ -1,7 +1,7 @@
 # Google Ads Performance Analysis — (2023–2025)
 
 **Tools:** SQL · Power BI · DAX · Google Analytics 4  
-**Data:** Anonymized with employer approval | Two hotel properties  
+**Data:** Anonymized | Two hotel properties  
 **Status:** Complete
 
 ---

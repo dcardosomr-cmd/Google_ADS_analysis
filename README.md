@@ -275,8 +275,6 @@ The full SQL analysis is organized across five sections matching the dashboard s
 - **Section 4 — Keywords:** Branded vs non-branded split, concentration risk, match type performance, zero-conversion keyword audit
 - **Section 5 — GA4 Attribution:** Channel revenue and ROAS, multi-touch attribution paths, conversion complexity, non-Google campaign performance
 
-Full SQL file: [`inspira_google_ads_analysis.sql`](inspira_google_ads_analysis.sql)
-
 
 ## About This Project
 

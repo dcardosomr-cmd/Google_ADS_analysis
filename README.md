@@ -1,4 +1,4 @@
-# Google Ads & GA4 Performance Analysis (2023– Present)
+# Inspira Hotels — Google Ads & GA4 Performance Analysis (2023–2025)
 
 ## Project Overview
 
@@ -22,7 +22,7 @@ The goal was to identify what is working, what is not, where budget should be re
 
 ## Overview
 
-![Overview Dashboard](overview.png)
+![Overview Dashboard](Dashboards/overview.png)
 
 **Total Spend:** €46.78K | **Total Revenue:** €142.73K | **ROAS:** 3.05 | **Conversions:** 517 | **CPA:** €90.47 | **CTR:** 3.32%
 
@@ -40,7 +40,7 @@ The overall picture is positive — for every €1 invested, €3.05 was returne
 
 ## Campaign Performance
 
-![Campaign Performance Dashboard](campaign-overview.png)
+![Campaign Performance Dashboard](Dashboards/campaign-overview.png)
 
 The campaign-level data reveals a clear hierarchy: all top revenue-generating campaigns are Search campaigns targeting specific markets.
 
@@ -66,7 +66,7 @@ The campaign-level data reveals a clear hierarchy: all top revenue-generating ca
 
 ## Market & Seasonality
 
-![Market & Seasonality Dashboard](market-seasonality.png)
+![Market & Seasonality Dashboard](Dashboards/market-seasonality.png)
 
 The market analysis reveals a significant misalignment between where budget is being invested and where the best returns are coming from.
 
@@ -99,7 +99,7 @@ The Portugal Q3 ROAS of 36.46 is the single strongest data point in the entire a
 
 ## Keywords
 
-![Keywords Dashboard](keywords.png)
+![Keywords Dashboard](Dashboards/keywords.png)
 
 The keyword analysis reveals a heavy dependency on branded traffic, which raises questions about whether paid investment is actually driving incremental revenue or simply capturing bookings that would have happened organically.
 
@@ -119,7 +119,7 @@ The keyword analysis reveals a heavy dependency on branded traffic, which raises
 
 ## GA4 Attribution
 
-![GA4 Attribution Dashboard](ga4-attribution.png)
+![GA4 Attribution Dashboard](Dashboards/ga4-attribution.png)
 
 The GA4 data provides a different perspective — it shows how users actually arrive at the website and which channels drive revenue, independent of Google Ads tracking.
 
@@ -168,4 +168,3 @@ The GA4 data provides a different perspective — it shows how users actually ar
 - **Pipeline:** Automated Python extraction → SQL Server → Power BI
 - **Revenue note:** Conversion tracking was unreliable before January 2023. All analysis is scoped to 2023 onwards where data has been validated against Google Ads UI totals
 - **Attribution model:** Google Ads last-click attribution for campaign data; GA4 data-driven attribution for channel analysis
-

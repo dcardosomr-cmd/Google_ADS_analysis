@@ -1,4 +1,4 @@
-# Inspira Hotels — Google Ads & GA4 Performance Analysis (2023–2025)
+#  Google Ads & GA4 Performance Analysis (2023– Present)
 
 ## Project Overview
 

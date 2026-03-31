@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project analyses Google Ads and GA4 performance data for Inspira Hotels, a boutique hotel group in Lisbon with two properties: Inspira Liberdade and Inspira Santos. The analysis covers January 2023 to March 2026 and is based on data extracted via an automated Python pipeline connecting the Google Ads API and GA4 API to SQL Server, visualised in Power BI.
+This project analyses Google Ads and GA4 performance data for hotel group in Lisbon with two properties: . The analysis covers January 2023 to March 2026 and is based on data extracted via an automated Python pipeline connecting the Google Ads API and GA4 API to SQL Server, visualised in Power BI.
 
 The goal was to identify what is working, what is not, where budget should be reallocated, and what strategic changes are needed to improve ROAS and drive new customer acquisition.
 

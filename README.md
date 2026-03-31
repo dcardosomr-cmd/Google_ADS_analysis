@@ -99,7 +99,7 @@ The Portugal Q3 ROAS of 36.46 is the single strongest data point in the entire a
 
 ## Keywords
 
-![Keywords Dashboard](Dashboards/keywords.png)
+![Keywords Dashboard](Dashboards/keyword.png)
 
 The keyword analysis reveals a heavy dependency on branded traffic, which raises questions about whether paid investment is actually driving incremental revenue or simply capturing bookings that would have happened organically.
 

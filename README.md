@@ -34,7 +34,7 @@ The overall picture is positive — for every €1 invested, €3.05 was returne
 - There is no relationship between clicks and ROAS. 2024 had more clicks than 2023 but significantly lower revenue, confirming that volume of traffic does not translate to revenue
 - Search campaigns account for 62% of revenue, making them the core of the strategy
 - ROAS has declined year on year the strategy needs to return to what worked in 2023
-- The CPA of €90.47 should be contextualised against the average hotel booking value, as a single booking likely covers multiple CPAs — the issue is not the CPA itself but whether the conversions being tracked represent actual bookings
+- The CPA of €90.47 should be contextualised against the average hotel booking value, as a single booking likely covers multiple CPAs, the issue is not the CPA itself but whether the conversions being tracked represent actual bookings
 
 ---
 

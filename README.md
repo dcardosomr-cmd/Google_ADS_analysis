@@ -40,7 +40,7 @@ The overall picture is positive — for every €1 invested, €3.05 was returne
 
 ## Campaign Performance
 
-![Campaign Performance Dashboard](Dashboards/campaign-overview.png)
+![Campaign Performance Dashboard](Dashboards/campaign-overviews.png)
 
 The campaign-level data reveals a clear hierarchy: all top revenue-generating campaigns are Search campaigns targeting specific markets.
 
